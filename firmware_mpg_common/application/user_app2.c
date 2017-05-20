@@ -68,10 +68,10 @@ extern volatile u32 G_u32SystemTime1s;                 /* From board-specific so
 
 
 /***********************************************************************************************************************
-Global variable definitions with scope limited to this local application.
-Variable names shall start with "UserApp2_" and be declared as static.
+Global variable definitions with scope（范围） limited to this local application.
+Variable names（变量名） shall start with "UserApp2_" and be declared as static.
 ***********************************************************************************************************************/
-static fnCode_type UserApp2_StateMachine;            /* The state machine function pointer */
+static fnCode_type UserApp2_StateMachine;            /* The state machine function pointer（函数指针） */
 
 static LedDisplayListHeadType UserApp2_sDemoLedCommandList;   
 static LedDisplayListHeadType UserApp2_sUserLedCommandList;     
@@ -95,10 +95,10 @@ Function Definitions
 Function: LedDisplayStartList
 
 Description:
-Clears the current USER list and ensures that all allocated memory is freed. 
+Clears the current USER list and ensures that all allocated（存储器配置） memory is freed. 
 Since the list is being cleared, the LED display task must be stopped if it is currently
-displaying the USER list.  Alternately, the DEMO list could be started, but it 
-makes more sense to turn off the display at this time (the user can restart the DEMO
+displaying the USER list.  Alternately（交替的）, the DEMO list could be started, but it 
+makes more sense（更有意义） to turn off the display at this time (the user can restart the DEMO
 list if they want to).
 
 Requires:
